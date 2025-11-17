@@ -1,6 +1,6 @@
 workflows:
   ios-workflow:
-    name: iOS App Store Build
+    name: "iOS App Store Build"
     instance_type: mac_mini_m2
     max_build_duration: 120
 
@@ -14,20 +14,21 @@ workflows:
         bundle_identifier: com.raisamelnyk.chilicarnival
       vars:
         BUNDLE_ID: com.raisamelnyk.chilicarnival
-        XCODE_WORKSPACE: "Pepperush.xcworkspace" 
+        XCODE_WORKSPACE: "Pepperush.xcworkspace" # <-- потом обновишь путь
         XCODE_SCHEME: "Pepperush"
         APP_STORE_APPLE_ID: 6755381850
 
     scripts:
-      - name: 🔍 Debug: show all .xcworkspace files
+      - name: "🔍 Debug — show all .xcworkspace files"
         script: |
           echo "=== Listing all workspaces ==="
           find . -name "*.xcworkspace"
 
-      - name: ⚙️ Set up code signing
-        script: xcode-project use-profiles
+      - name: "⚙️ Set up code signing"
+        script: |
+          xcode-project use-profiles
 
-      - name: 🚀 Build IPA for App Store
+      - name: "🚀 Build IPA for App Store"
         script: |
           xcode-project build-ipa \
           --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
