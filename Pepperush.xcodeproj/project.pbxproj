@@ -9,23 +9,12 @@
 /* Begin PBXBuildFile section */
 		75799C0C2ECB33DE0035CD48 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 75799C0B2ECB33DE0035CD48 /* OneSignal */; };
 		75799C0E2ECB33DE0035CD48 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 75799C0D2ECB33DE0035CD48 /* OneSignalExtension */; };
-		75799C1F2ECB343E0035CD48 /* OneNotification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 75799C182ECB343E0035CD48 /* OneNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75799C262ECB34990035CD48 /* PepperLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C252ECB34990035CD48 /* PepperLast.swift */; };
 		75799C282ECB34A50035CD48 /* CustomCarnaval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C272ECB34A50035CD48 /* CustomCarnaval.swift */; };
 		75799C2A2ECB34AD0035CD48 /* PepperLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C292ECB34AD0035CD48 /* PepperLoad.swift */; };
 		75799C2C2ECB34B90035CD48 /* CarnavalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C2B2ECB34B90035CD48 /* CarnavalViewModel.swift */; };
 		75799C2E2ECB34C50035CD48 /* SecondPepperLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C2D2ECB34C50035CD48 /* SecondPepperLoad.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		75799C1D2ECB343E0035CD48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75798FD52EC396CE0035CD48 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 75799C172ECB343E0035CD48;
-			remoteInfo = OneNotification;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		75799C242ECB343E0035CD48 /* Embed Foundation Extensions */ = {
@@ -34,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				75799C1F2ECB343E0035CD48 /* OneNotification.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		75798FDD2EC396CE0035CD48 /* Pepperush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pepperush.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		75799C182ECB343E0035CD48 /* OneNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		75799C252ECB34990035CD48 /* PepperLast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperLast.swift; sourceTree = "<group>"; };
 		75799C272ECB34A50035CD48 /* CustomCarnaval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarnaval.swift; sourceTree = "<group>"; };
 		75799C292ECB34AD0035CD48 /* PepperLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperLoad.swift; sourceTree = "<group>"; };
@@ -58,13 +45,6 @@
 				Info.plist,
 			);
 			target = 75798FDC2EC396CE0035CD48 /* Pepperush */;
-		};
-		75799C232ECB343E0035CD48 /* Exceptions for "OneNotification" folder in "OneNotification" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 75799C172ECB343E0035CD48 /* OneNotification */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -82,14 +62,6 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		75799C192ECB343E0035CD48 /* OneNotification */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				75799C232ECB343E0035CD48 /* Exceptions for "OneNotification" folder in "OneNotification" target */,
-			);
-			path = OneNotification;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +74,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75799C152ECB343E0035CD48 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -118,7 +83,6 @@
 				75799C0F2ECB33E50035CD48 /* Core */,
 				75799B8C2ECB337D0035CD48 /* OnboardCore */,
 				75798FDF2EC396CE0035CD48 /* Pepperush */,
-				75799C192ECB343E0035CD48 /* OneNotification */,
 				75798FDE2EC396CE0035CD48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				75798FDD2EC396CE0035CD48 /* Pepperush.app */,
-				75799C182ECB343E0035CD48 /* OneNotification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,7 +122,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				75799C1E2ECB343E0035CD48 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				75798FDF2EC396CE0035CD48 /* Pepperush */,
@@ -174,28 +136,6 @@
 			productReference = 75798FDD2EC396CE0035CD48 /* Pepperush.app */;
 			productType = "com.apple.product-type.application";
 		};
-		75799C172ECB343E0035CD48 /* OneNotification */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 75799C202ECB343E0035CD48 /* Build configuration list for PBXNativeTarget "OneNotification" */;
-			buildPhases = (
-				75799C142ECB343E0035CD48 /* Sources */,
-				75799C152ECB343E0035CD48 /* Frameworks */,
-				75799C162ECB343E0035CD48 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				75799C192ECB343E0035CD48 /* OneNotification */,
-			);
-			name = OneNotification;
-			packageProductDependencies = (
-			);
-			productName = OneNotification;
-			productReference = 75799C182ECB343E0035CD48 /* OneNotification.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,9 +147,6 @@
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					75798FDC2EC396CE0035CD48 = {
-						CreatedOnToolsVersion = 16.3;
-					};
-					75799C172ECB343E0035CD48 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
@@ -232,20 +169,12 @@
 			projectRoot = "";
 			targets = (
 				75798FDC2EC396CE0035CD48 /* Pepperush */,
-				75799C172ECB343E0035CD48 /* OneNotification */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		75798FDB2EC396CE0035CD48 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75799C162ECB343E0035CD48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,22 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75799C142ECB343E0035CD48 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		75799C1E2ECB343E0035CD48 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 75799C172ECB343E0035CD48 /* OneNotification */;
-			targetProxy = 75799C1D2ECB343E0035CD48 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		75798FE62EC396CF0035CD48 /* Debug */ = {
@@ -409,8 +323,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pepperush/Info.plist;
@@ -429,6 +344,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.raisamelnyk.chilicarnival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -444,8 +360,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pepperush/Info.plist;
@@ -464,6 +381,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.raisamelnyk.chilicarnival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -471,54 +389,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		75799C212ECB343E0035CD48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OneNotification/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OneNotification;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.raisamelnyk.chilicarnival.OneNotification;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		75799C222ECB343E0035CD48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OneNotification/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OneNotification;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.raisamelnyk.chilicarnival.OneNotification;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -539,15 +409,6 @@
 			buildConfigurations = (
 				75798FE92EC396CF0035CD48 /* Debug */,
 				75798FEA2EC396CF0035CD48 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		75799C202ECB343E0035CD48 /* Build configuration list for PBXNativeTarget "OneNotification" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				75799C212ECB343E0035CD48 /* Debug */,
-				75799C222ECB343E0035CD48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
