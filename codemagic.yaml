@@ -1,47 +1,33 @@
 workflows:
   ios-workflow:
-    name: "iOS App Store Build"
-    instance_type: mac_mini_m2
+    name: iOS Workflow
     max_build_duration: 120
-
+    instance_type: mac_mini_m2
     integrations:
       app_store_connect: app_store
-
     environment:
-      xcode: latest
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.raisamelnyk.chilicarnival
       vars:
         BUNDLE_ID: com.raisamelnyk.chilicarnival
-        XCODE_WORKSPACE: "Pepperush.xcworkspace" # <-- потом обновишь путь
+        XCODE_PROJECT: "Pepperush.xcodeproj"
         XCODE_SCHEME: "Pepperush"
         APP_STORE_APPLE_ID: 6755381850
-
+      xcode: latest
     scripts:
-      - name: "🔍 Debug — show all .xcworkspace files"
-        script: |
-          echo "=== Listing all workspaces ==="
-          find . -name "*.xcworkspace"
-
-      - name: "⚙️ Set up code signing"
-        script: |
-          xcode-project use-profiles
-
-      - name: "🚀 Build IPA for App Store"
+      - name: Set up provisioning profiles settings on Xcode project
+        script: xcode-project use-profiles
+      - name: Build ipa for distribution
         script: |
           xcode-project build-ipa \
-          --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-          --scheme "$XCODE_SCHEME" \
-          --archive-xcargs "-allowProvisioningUpdates"
-
+          --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+          --scheme "$XCODE_SCHEME"
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
-
     publishing:
       app_store_connect:
         auth: integration
-        submit_to_testflight: true
