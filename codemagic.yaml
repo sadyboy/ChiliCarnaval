@@ -11,7 +11,7 @@ workflows:
         bundle_identifier: com.raisamelnyk.chilicarnival
       vars:
         BUNDLE_ID: com.raisamelnyk.chilicarnival
-        XCODE_PROJECT: "ChiliCarnaval.xcodeproj"
+        XCODE_PROJECT: "Pepperush.xcworkspace"
         XCODE_SCHEME: "Pepperush"
         APP_STORE_APPLE_ID: 6755381850
       xcode: latest
