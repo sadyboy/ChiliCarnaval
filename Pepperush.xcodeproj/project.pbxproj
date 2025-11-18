@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75799C262ECB34990035CD48 /* PepperLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C252ECB34990035CD48 /* PepperLast.swift */; };
-		75799C282ECB34A50035CD48 /* CustomCarnaval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C272ECB34A50035CD48 /* CustomCarnaval.swift */; };
-		75799C2A2ECB34AD0035CD48 /* PepperLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C292ECB34AD0035CD48 /* PepperLoad.swift */; };
-		75799C2C2ECB34B90035CD48 /* CarnavalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C2B2ECB34B90035CD48 /* CarnavalViewModel.swift */; };
-		75799C2E2ECB34C50035CD48 /* SecondPepperLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C2D2ECB34C50035CD48 /* SecondPepperLoad.swift */; };
 		7579A0DA2ECC67D30035CD48 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 7579A0D92ECC67D30035CD48 /* OneSignal */; };
 /* End PBXBuildFile section */
 
@@ -30,11 +25,6 @@
 
 /* Begin PBXFileReference section */
 		75798FDD2EC396CE0035CD48 /* Pepperush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pepperush.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		75799C252ECB34990035CD48 /* PepperLast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperLast.swift; sourceTree = "<group>"; };
-		75799C272ECB34A50035CD48 /* CustomCarnaval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarnaval.swift; sourceTree = "<group>"; };
-		75799C292ECB34AD0035CD48 /* PepperLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperLoad.swift; sourceTree = "<group>"; };
-		75799C2B2ECB34B90035CD48 /* CarnavalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarnavalViewModel.swift; sourceTree = "<group>"; };
-		75799C2D2ECB34C50035CD48 /* SecondPepperLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPepperLoad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,11 +46,6 @@
 			path = Pepperush;
 			sourceTree = "<group>";
 		};
-		75799C0F2ECB33E50035CD48 /* Core */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Core;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +63,6 @@
 		75798FD42EC396CE0035CD48 = {
 			isa = PBXGroup;
 			children = (
-				75799C0F2ECB33E50035CD48 /* Core */,
-				75799B8C2ECB337D0035CD48 /* OnboardCore */,
 				75798FDF2EC396CE0035CD48 /* Pepperush */,
 				75798FDE2EC396CE0035CD48 /* Products */,
 			);
@@ -91,18 +74,6 @@
 				75798FDD2EC396CE0035CD48 /* Pepperush.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		75799B8C2ECB337D0035CD48 /* OnboardCore */ = {
-			isa = PBXGroup;
-			children = (
-				75799C252ECB34990035CD48 /* PepperLast.swift */,
-				75799C272ECB34A50035CD48 /* CustomCarnaval.swift */,
-				75799C292ECB34AD0035CD48 /* PepperLoad.swift */,
-				75799C2B2ECB34B90035CD48 /* CarnavalViewModel.swift */,
-				75799C2D2ECB34C50035CD48 /* SecondPepperLoad.swift */,
-			);
-			path = OnboardCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +94,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				75798FDF2EC396CE0035CD48 /* Pepperush */,
-				75799C0F2ECB33E50035CD48 /* Core */,
 			);
 			name = Pepperush;
 			packageProductDependencies = (
@@ -185,11 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75799C2C2ECB34B90035CD48 /* CarnavalViewModel.swift in Sources */,
-				75799C282ECB34A50035CD48 /* CustomCarnaval.swift in Sources */,
-				75799C262ECB34990035CD48 /* PepperLast.swift in Sources */,
-				75799C2A2ECB34AD0035CD48 /* PepperLoad.swift in Sources */,
-				75799C2E2ECB34C50035CD48 /* SecondPepperLoad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +288,7 @@
 				CODE_SIGN_ENTITLEMENTS = Pepperush/Pepperush.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -362,7 +327,7 @@
 				CODE_SIGN_ENTITLEMENTS = Pepperush/Pepperush.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
