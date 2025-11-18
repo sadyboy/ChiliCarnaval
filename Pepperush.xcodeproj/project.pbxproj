@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75799C0C2ECB33DE0035CD48 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 75799C0B2ECB33DE0035CD48 /* OneSignal */; };
-		75799C0E2ECB33DE0035CD48 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 75799C0D2ECB33DE0035CD48 /* OneSignalExtension */; };
 		75799C262ECB34990035CD48 /* PepperLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C252ECB34990035CD48 /* PepperLast.swift */; };
 		75799C282ECB34A50035CD48 /* CustomCarnaval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C272ECB34A50035CD48 /* CustomCarnaval.swift */; };
 		75799C2A2ECB34AD0035CD48 /* PepperLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C292ECB34AD0035CD48 /* PepperLoad.swift */; };
 		75799C2C2ECB34B90035CD48 /* CarnavalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C2B2ECB34B90035CD48 /* CarnavalViewModel.swift */; };
 		75799C2E2ECB34C50035CD48 /* SecondPepperLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75799C2D2ECB34C50035CD48 /* SecondPepperLoad.swift */; };
+		7579A0DA2ECC67D30035CD48 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 7579A0D92ECC67D30035CD48 /* OneSignal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,8 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75799C0C2ECB33DE0035CD48 /* OneSignal in Frameworks */,
-				75799C0E2ECB33DE0035CD48 /* OneSignalExtension in Frameworks */,
+				7579A0DA2ECC67D30035CD48 /* OneSignal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +127,7 @@
 			);
 			name = Pepperush;
 			packageProductDependencies = (
-				75799C0B2ECB33DE0035CD48 /* OneSignal */,
-				75799C0D2ECB33DE0035CD48 /* OneSignalExtension */,
+				7579A0D92ECC67D30035CD48 /* OneSignal */,
 			);
 			productName = Pepperush;
 			productReference = 75798FDD2EC396CE0035CD48 /* Pepperush.app */;
@@ -161,7 +158,7 @@
 			mainGroup = 75798FD42EC396CE0035CD48;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				75799C0A2ECB33DE0035CD48 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				7579A0D82ECC67D30035CD48 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 75798FDE2EC396CE0035CD48 /* Products */;
@@ -324,9 +321,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pepperush/Pepperush.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -363,9 +360,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pepperush/Pepperush.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -420,7 +417,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		75799C0A2ECB33DE0035CD48 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+		7579A0D82ECC67D30035CD48 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK.git";
 			requirement = {
@@ -432,15 +429,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		75799C0B2ECB33DE0035CD48 /* OneSignal */ = {
+		7579A0D92ECC67D30035CD48 /* OneSignal */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 75799C0A2ECB33DE0035CD48 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			package = 7579A0D82ECC67D30035CD48 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
 			productName = OneSignal;
-		};
-		75799C0D2ECB33DE0035CD48 /* OneSignalExtension */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 75799C0A2ECB33DE0035CD48 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
-			productName = OneSignalExtension;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
